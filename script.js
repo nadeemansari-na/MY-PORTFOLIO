@@ -31,14 +31,33 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 })
 
+
+
 //add event listener to hamburger
 let nikalna=document.getElementsByClassName("nikalna")
 let burger=document.getElementsByClassName("bar")
 burger[0].addEventListener("click",e=>{
-    nikalna[0].style.transform="translatey(0)"
+    nikalna[0].style.transform="translatey(60px)"
 })
 
 let cancel=document.querySelector(".cancel")
 cancel.addEventListener("click",v=>{
     nikalna[0].style.transform="translatey(-400px)"
+})
+
+// clicking nikalna change
+let change=document.querySelectorAll(".nikalna .sini")
+change.forEach((v)=>{
+
+    v.addEventListener("click",e=>{
+        nikalna[0].style.transform="translatey(-400px)"
+    })
+})
+
+//clicking ico
+let icchan=document.querySelectorAll(".simi")
+icchan.forEach((v)=>{
+    v.addEventListener("click",x=>{
+        
+    })
 })

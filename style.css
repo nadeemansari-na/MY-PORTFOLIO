@@ -93,11 +93,11 @@ button {
 }
 
 .nikalna {
-    z-index: 5;
+    /* z-index: 5; */
     height: 32vh;
     position: fixed;
     justify-self: center;
-    width: 250px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +180,6 @@ button {
 .first {
     animation: lt 0.5s ease-out 600ms;
 }
-
 @keyframes lt {
     0% {
         transform: translateY(50px);
@@ -223,15 +222,24 @@ button {
     width: 20px;
     height: 20px;
     text-align: center;
+    transition:all 0.4s ease;
 }
-
+.ico i:hover{
+    color: black;
+}
 .cs {
     border-radius: 10px;
     padding: 5px;
     box-shadow: 1px 2px 2px 2px rgba(1, 1, 1, 0.5);
     border: 1px solid transparent;
+    transition: all 0.3s ease;
 }
-
+.cs:hover{
+    transform: translateY(-6px);
+    color: black;
+    background-color: #94b8d7;
+    box-shadow: 0px 1px 25px rgb(80, 179, 218);
+}
 .more {
     box-shadow: 0px 1px 15px skyblue;
     font-weight: bolder;
@@ -241,9 +249,11 @@ button {
     padding: 8px 23px;
     background-color: #78addc;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .more:hover {
+    transform: scale(1.04);
     background-color: #78addc;
     box-shadow: 0px 1px 25px rgb(80, 179, 218);
 }
@@ -268,14 +278,12 @@ button {
     align-items: center;
     border-radius: 50%;
     width: 395px;
-    ;
     height: 415px;
     box-shadow: 0px 0px 60px rgb(218, 126, 196);
     animation: oianimate 0.5s ease-in;
 }
 
 @keyframes oianimate {
-
     0%,
     50%,
     80% {
@@ -304,7 +312,6 @@ button {
 }
 
 @keyframes oanimate {
-
     0%,
     50%,
     80% {
@@ -312,7 +319,6 @@ button {
         background-color: transparent;
         box-shadow: none;
     }
-
     100% {
         background-color: rgb(142, 216, 216);
         display: contents;
@@ -330,7 +336,6 @@ button {
 }
 
 @keyframes oaanimate {
-
     0%,
     50%,
     80% {
