@@ -31,26 +31,40 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 })
 
+let nikalna=document.querySelector(".nikalna")
+const getre=()=>{
 
-
-//add event listener to hamburger
-let nikalna=document.getElementsByClassName("nikalna")
-let burger=document.getElementsByClassName("bar")
-burger[0].addEventListener("click",e=>{
-    nikalna[0].style.transform="translatey(60px)"
-})
+let burger=document.querySelector(".bar")
+let baimg=burger.querySelector("img")
+burger.addEventListener("click",e=>{
+    nikalna.style.transform="translatey(60px)"
+   baimg.src="close.svg"
+   burger.classList.replace("bar","cancel")
 
 let cancel=document.querySelector(".cancel")
+if(cancel){
 cancel.addEventListener("click",v=>{
-    nikalna[0].style.transform="translatey(-400px)"
+    nikalna.style.transform="translatey(-460px)"
+    let bbaimg=cancel.querySelector("img")
+    bbaimg.src="hamburger.svg"
+    cancel.classList.replace("cancel","bar")
+    burger=document.querySelector(".bar")
+    getre()
 })
-
+}
+})
+}
+getre()
 // clicking nikalna change
 let change=document.querySelectorAll(".nikalna .sini")
 change.forEach((v)=>{
 
     v.addEventListener("click",e=>{
-        nikalna[0].style.transform="translatey(-400px)"
+        nikalna.style.transform="translatey(-400px)"
+        let cancel=document.querySelector(".cancel")
+        cancel.querySelector("img").src="hamburger.svg"
+        cancel.classList.replace("cancel","bar")
+        getre()
     })
 })
 

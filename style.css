@@ -79,9 +79,11 @@ button {
         transform: translateX(0px);
     }
 }
-
-.bar {
-    display: none;
+.invert{
+    filter: invert(1);
+}
+.bar{
+    visibility: hidden;
 }
 
 
@@ -608,7 +610,7 @@ h1 {
 }
 
 .fone .inf {
-    width: 23rem;
+    width: 18rem;
     display: flex;
     justify-content: space-between;
 }
@@ -622,7 +624,7 @@ h1 {
 
 .fone .perce {
     height: 100%;
-    width: 90%;
+    width: 70%;
     background-color: rgb(116, 189, 226);
 }
 
@@ -636,13 +638,13 @@ h1 {
 
 .sone .perce {
     height: 100%;
-    width: 70%;
+    width: 40%;
     background-color: rgb(116, 189, 226);
     animation: rkbb 0.5s ease-in;
 }
 
 .sone .inf {
-    width: 18rem;
+    width: 11rem;
 }
 
 .imgg3 i {
@@ -655,27 +657,25 @@ h1 {
 
 .tone .perce {
     height: 100%;
-    width: 50%;
+    width: 35%;
     background-color: rgb(116, 189, 226);
     animation: rkb 0.5s ease-in-out;
 }
 
 .tone .inf {
-    width: 13rem;
+    width: 10rem;
 }
+ .fuone .perce {
+        height: 100%;
+        width: 50%;
+        background-color: rgb(116, 189, 226);
+        animation: rkbc 0.5s ease-in-out;
+    }
+    .fuone .inf {
+        width: 13rem;
+    }
 
 @keyframes rkob {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 90%;
-    }
-
-}
-
-@keyframes rkbb {
     0% {
         width: 0%;
     }
@@ -686,7 +686,28 @@ h1 {
 
 }
 
+@keyframes rkbb {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+
+}
+
 @keyframes rkb {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 35%;
+    }
+
+}
+@keyframes rkbc {
     0% {
         width: 0%;
     }
@@ -811,6 +832,7 @@ h1 {
 .inform {
     height: 55%;
     padding: 20px;
+    transition: all 0.3s ease;
 }
 
 .inform p {
@@ -822,6 +844,7 @@ h1 {
 }
 
 .card:hover {
+    /* box-shadow: 1px 1px 12px rgb(108, 108, 219); */
     box-shadow: 0px 0px 18px rgba(1, 1, 1, 0.9);
     transform: scale(1.02);
 }
@@ -1082,10 +1105,10 @@ h1 {
         display: flex;
         justify-content: space-around;
     }
+.bar{
+    visibility: visible;
+}
 
-    .bar {
-        display: contents;
-    }
 
     .edu {
         margin: 30px 0;
@@ -1178,7 +1201,7 @@ h1 {
     }
 
     .fone .inf {
-        width: 19rem;
+        width: 15rem;
         display: flex;
         justify-content: space-between;
     }
@@ -1192,29 +1215,38 @@ h1 {
 
     .fone .perce {
         height: 100%;
-        width: 90%;
+        width: 70%;
         background-color: rgb(116, 189, 226);
     }
 
     .sone .perce {
         height: 100%;
-        width: 70%;
+        width: 40%;
         background-color: rgb(116, 189, 226);
         animation: rkbb 0.5s ease-in;
     }
 
     .sone .inf {
-        width: 15rem;
+        width: 9rem;
     }
 
     .tone .perce {
         height: 100%;
-        width: 50%;
+        width: 35%;
         background-color: rgb(116, 189, 226);
         animation: rkb 0.5s ease-in-out;
     }
 
     .tone .inf {
+        width: 8rem;
+    }
+     .fuone .perce {
+        height: 100%;
+        width: 50%;
+        background-color: rgb(116, 189, 226);
+        animation: rkbc 0.5s ease-in-out;
+    }
+    .fuone .inf {
         width: 11rem;
     }
 }
