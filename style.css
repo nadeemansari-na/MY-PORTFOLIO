@@ -1090,9 +1090,11 @@ h1 {
         transform: scale(1.06);
     }
     .edu {
-        padding-top: 64px;
+        padding-top: 55px;
     }
-
+ .edu h1{
+    margin-bottom: 30px;
+ }
     .oimg {
         display: none;
     }
@@ -1107,8 +1109,11 @@ h1 {
     }
 .bar{
     visibility: visible;
+    transition-delay: 0.5s;
 }
-
+.cancel{
+    transition-delay: 0.7s;
+}
 
     .edu {
         margin: 30px 0;
@@ -1138,7 +1143,7 @@ h1 {
     }
 
     .about {
-        height: auto;
+        height: 63vh;
     }
 
     .skills {
